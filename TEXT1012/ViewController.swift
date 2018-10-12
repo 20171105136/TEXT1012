@@ -10,9 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var clmA: UITextField!
+    @IBOutlet weak var clmB: UITextField!
+    @IBOutlet weak var clmC: UITextField!
+    @IBAction func clmADD(_ sender: Any) {
+        
+        clmC.text = "\(Int(clmA.text!)! + Int(clmB.text!)!)"
+}
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+   
     }
 
 
